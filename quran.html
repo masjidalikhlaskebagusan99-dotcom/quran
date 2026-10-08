@@ -100,166 +100,6 @@ box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     .btn-neon { padding: 9px 14px; font-size: 11px; }
     .btn-neon.full-width { padding: 11px 18px; font-size: 13px; }
 }
-/* ========== FOOTER IDENTIK MASJID.HTML ========== */
-.site-footer {
-    background: linear-gradient(135deg, #0a1f0a 0%, #1b4332 50%, #0d2818 100%);
-    border-top: 3px solid #00ff88;
-    padding: 50px 20px 20px;
-    margin-top: 50px;
-    box-shadow: 0 -5px 25px rgba(0, 255, 136, 0.3);
-    position: relative;
-}
-
-.site-footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, transparent, #FFD700, #00ff88, #FFD700, transparent);
-}
-
-.footer-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-    margin-bottom: 40px;
-}
-
-.footer-brand h3 {
-    color: #FFD700 !important;
-    font-size: 22px;
-    font-weight: 900;
-    margin-bottom: 10px;
-    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
-}
-
-.footer-brand p {
-    color: #e0e0e0;
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-.footer-section h4 {
-    color: #FFD700 !important;
-    font-size: 16px;
-    font-weight: 900;
-    margin-bottom: 18px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #00ff88;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-section ul li {
-    margin-bottom: 10px;
-}
-
-.footer-section ul li a {
-    color: #e0e0e0;
-    text-decoration: none;
-    font-size: 14px;
-    transition: all 0.3s;
-    display: inline-block;
-    padding: 4px 0;
-}
-
-.footer-section ul li a:hover {
-    color: #FFD700 !important;
-    transform: translateX(5px);
-    text-shadow: 0 0 8px rgba(255, 215, 0, 0.7);
-}
-
-.footer-rekening {
-    background: rgba(0, 255, 136, 0.1);
-    border: 1px solid #00ff88;
-    border-radius: 8px;
-    padding: 15px;
-    margin-top: 10px;
-}
-
-.footer-rekening p {
-    color: #e0e0e0;
-    font-size: 13px;
-    margin-bottom: 5px;
-}
-
-.footer-rekening strong {
-    color: #FFD700 !important;
-}
-
-.footer-bottom {
-    border-top: 2px solid rgba(0, 255, 136, 0.3);
-    padding-top: 20px;
-    text-align: center;
-}
-
-.footer-bottom p {
-    color: #a0a0a0;
-    font-size: 13px;
-    margin-bottom: 10px;
-}
-
-.footer-contact {
-    color: #e0e0e0;
-    font-size: 13px;
-    margin-bottom: 15px;
-}
-
-.footer-social {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    flex-wrap: wrap;
-    margin-top: 15px;
-}
-
-.footer-social a {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 8px 16px;
-    background: rgba(0, 255, 136, 0.15);
-    border: 1px solid #00ff88;
-    border-radius: 20px;
-    color: #FFD700 !important;
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: 700;
-    transition: all 0.3s;
-}
-
-.footer-social a:hover {
-    background: rgba(0, 255, 136, 0.3);
-    box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
-    transform: translateY(-2px);
-}
-
-@media (max-width: 768px) {
-    .site-footer { padding: 30px 15px 15px; }
-    .footer-container { grid-template-columns: 1fr; gap: 25px; }
-    .footer-brand h3 { font-size: 18px; }
-    .footer-section h4 { font-size: 14px; }
-    .footer-social { gap: 8px; }
-    .footer-social a { padding: 6px 12px; font-size: 12px; }
-}
-
-@media (max-width: 480px) {
-    .footer-brand h3 { font-size: 16px; }
-    .footer-section ul li a { font-size: 13px; }
-    .footer-bottom p { font-size: 12px; }
-}
 .surah-grid {
 display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 gap: 12px; margin-bottom: 30px;
@@ -446,7 +286,167 @@ font-size: 15px;
 .btn-neon { padding: 9px 14px; font-size: 11px; }
 .btn-neon.full-width { padding: 11px 18px; font-size: 13px; }
 }
+/* ========== FOOTER IDENTIK MASJID.HTML ========== */
+.site-footer {
+    background: linear-gradient(135deg, #0a1f0a 0%, #1b4332 50%, #0d2818 100%);
+    border-top: 3px solid #00ff88;
+    padding: 50px 20px 20px;
+    margin-top: 50px;
+    box-shadow: 0 -5px 25px rgba(0, 255, 136, 0.3);
+    position: relative;
+}
 
+.site-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #FFD700, #00ff88, #FFD700, transparent);
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-brand h3 {
+    color: #FFD700 !important;
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.footer-brand p {
+    color: #e0e0e0;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.footer-section h4 {
+    color: #FFD700 !important;
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #00ff88;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s;
+    display: inline-block;
+    padding: 4px 0;
+}
+
+.footer-section ul li a:hover {
+    color: #FFD700 !important;
+    transform: translateX(5px);
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.7);
+}
+
+.footer-rekening {
+    background: rgba(0, 255, 136, 0.1);
+    border: 1px solid #00ff88;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.footer-rekening p {
+    color: #e0e0e0;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.footer-rekening strong {
+    color: #FFD700 !important;
+}
+
+.footer-bottom {
+    border-top: 2px solid rgba(0, 255, 136, 0.3);
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #a0a0a0;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.footer-contact {
+    color: #e0e0e0;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.footer-social a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: rgba(0, 255, 136, 0.15);
+    border: 1px solid #00ff88;
+    border-radius: 20px;
+    color: #FFD700 !important;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+.footer-social a:hover {
+    background: rgba(0, 255, 136, 0.3);
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+    transform: translateY(-2px);
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .site-footer { padding: 30px 15px 15px; }
+    .footer-container { grid-template-columns: 1fr; gap: 25px; }
+    .footer-brand h3 { font-size: 18px; }
+    .footer-section h4 { font-size: 14px; }
+    .footer-social { gap: 8px; }
+    .footer-social a { padding: 6px 12px; font-size: 12px; }
+}
+
+@media (max-width: 480px) {
+    .footer-brand h3 { font-size: 16px; }
+    .footer-section ul li a { font-size: 13px; }
+    .footer-bottom p { font-size: 12px; }
+}
 </style>
 </head>
 <body>
@@ -476,6 +476,7 @@ font-size: 15px;
     <div class="menu-neon-wrapper">
         <div class="menu-neon-title">Kategori Utama</div>
         <div class="menu-neon-grid">
+            <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="btn-neon">Beranda</a>
             <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/quran/quran.html" class="btn-neon">Al-Quran</a>
             <a href="tag-syekh.html" class="btn-neon">Syekh Abdul Qadir</a>
             <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/artikelwali2/artikelwali2.html" class="btn-neon full-width">Kumpulan Karomah Waliyullah</a>
@@ -516,71 +517,72 @@ font-size: 15px;
 </div>
 </div>
 </div>
-<!-- ========== FOOTER IDENTIK MASJID.HTML (URL DIPERBAIKI) ========== -->
+<!-- ========== FOOTER IDENTIK MASJID.HTML (LINK DIPERBAIKI) ========== -->
+<!-- ========== FOOTER BARU DENGAN LINK YANG BENAR ========== -->
 <footer class="site-footer">
-    <div class="footer-container">
-        <!-- Brand -->
-        <div class="footer-brand">
-            <h3>🕌 Masjid Jami' Al-Ikhlas</h3>
-            <p>Pusat dakwah, pendidikan, dan pelayanan umat di Kebagusan, Pasar Minggu, Jakarta Selatan. Berdiri sejak 1975, terus berkhidmat untuk umat dengan standar nasional & internasional.</p>
-        </div>
-
-        <!-- Tautan Cepat -->
-        <div class="footer-section">
-            <h4>Tautan Cepat</h4>
-            <ul>
-                <li><a href="https://masjidalikhlaskebagusan99-dotcom.github.io/masjid.html" target="_blank">Beranda</a></li>
-                <li><a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" target="_blank">Profil Masjid</a></li>
-                <li><a href="https://masjidalikhlaskebagusan99-dotcom.github.io/masjid.html#majlis-talim" target="_blank">Kegiatan Rutin</a></li>
-                <li><a href="https://masjidalikhlaskebagusan99-dotcom.github.io/masjid.html#bmt" target="_blank">Badan Pengembangan</a></li>
-                <li><a href="https://masjidalikhlaskebagusan99-dotcom.github.io/masjid.html#buku-kas" target="_blank">Buku Kas Masjid</a></li>
-                <li><a href="https://masjidalikhlaskebagusan99-dotcom.github.io/masjid.html#buku-kas-phbi" target="_blank">Buku Kas PHBI</a></li>
-                <li><a href="https://masjidalikhlaskebagusan99-dotcom.github.io/masjid.html#buku-kas-santunan" target="_blank">Buku Kas Santunan</a></li>
-                <li><a href="https://masjidalikhlaskebagusan99-dotcom.github.io/masjid.html#anggaran" target="_blank">Anggaran & Proposal</a></li>
-                <li><a href="https://masjidalikhlaskebagusan99-dotcom.github.io/masjid.html#kontak" target="_blank">Kontak Kami</a></li>
-            </ul>
-        </div>
-
-        <!-- Layanan Umat -->
-        <div class="footer-section">
-            <h4>Layanan Umat</h4>
-            <ul>
-                <li><a href="https://masjidalikhlaskebagusan99-dotcom.github.io/masjid.html#majlis-talim" target="_blank">Majlis Ta'lim & Dzikir</a></li>
-                <li><a href="https://masjidalikhlaskebagusan99-dotcom.github.io/masjid.html#petugas-jumat" target="_blank">Sholat Jumat & Rawatib</a></li>
-                <li><a href="https://masjidalikhlaskebagusan99-dotcom.github.io/masjid.html#bmt" target="_blank">Baitul Mal (BMT) & Zakat</a></li>
-                <li><a href="https://masjidalikhlaskebagusan99-dotcom.github.io/masjid.html#bidang-pendidikan" target="_blank">Pendidikan Anak (TPA/PAUD)</a></li>
-                <li><a href="https://masjidalikhlaskebagusan99-dotcom.github.io/masjid.html#santunan" target="_blank">Santunan Yatim & Dhuafa</a></li>
-            </ul>
-        </div>
-
-        <!-- Rekening Donasi -->
-        <div class="footer-section">
-            <h4>Rekening Donasi</h4>
-            <div class="footer-rekening">
-                <p><strong>Bank Syariah Indonesia (BSI)</strong></p>
-                <p>No. Rek: 700-123-xxx</p>
-                <p>a.n. DKM Masjid Jami' Al-Ikhlas</p>
-                <p style="margin-top: 10px; font-size: 12px; color: #00ff88;">✓ Syariah · Transparan · Akuntabel</p>
-            </div>
-        </div>
+  <div class="footer-container">
+    <!-- Brand -->
+    <div class="footer-brand">
+      <h3>🕌 Masjid Jami' Al-Ikhlas</h3>
+      <p>Pusat dakwah, pendidikan, dan pelayanan umat di Kebagusan, Pasar Minggu, Jakarta Selatan. Berdiri sejak 1975, terus berkhidmat untuk umat dengan standar nasional & internasional.</p>
     </div>
 
-    <!-- Footer Bottom -->
-    <div class="footer-bottom">
-        <p>© 2026 Masjid Jami' Al-Ikhlas Kebagusan, Pasar Minggu, Jakarta Selatan. All Rights Reserved. | Dibangun dengan ❤️ untuk umat.</p>
-        <p class="footer-contact">📍 Jl. Ikhlas IV No. 22, Kebagusan, Pasar Minggu, Jakarta Selatan 12520 | (021) 7884-0000 | ️ info@masjidalikhlaskebagusan.or.id</p>
-        
-        <!-- Tombol Sosial Media -->
-        <div class="footer-social">
-            <a href="javascript:void(0)" onclick="shareWhatsApp()">💬 WhatsApp</a>
-            <a href="javascript:void(0)" onclick="shareFacebook()">📘 Facebook</a>
-            <a href="javascript:void(0)" onclick="shareInstagram()"> Instagram</a>
-            <a href="javascript:void(0)" onclick="shareEmail()">✉️ Email</a>
-            <a href="javascript:void(0)" onclick="copyLink()">🔗 Salin Link</a>
-        </div>
+    <!-- Tautan Cepat -->
+    <div class="footer-section">
+      <h4>Tautan Cepat</h4>
+      <ul>
+        <li><a href="#" onclick="goToMasjid('beranda');return false;">🏠 Beranda</a></li>
+        <li><a href="#" onclick="goToMasjid('profil');return false;">🕌 Profil Masjid</a></li>
+        <li><a href="#" onclick="goToMasjid('majlis-talim');return false;">📖 Kegiatan Rutin</a></li>
+        <li><a href="#" onclick="goToMasjid('badan-pengembangan');return false;">⚙️ Badan Pengembangan</a></li>
+        <li><a href="#" onclick="goToMasjid('buku-kas');return false;">📒 Buku Kas Masjid</a></li>
+        <li><a href="#" onclick="goToMasjid('buku-kas-phbi');return false;">📗 Buku Kas PHBI</a></li>
+        <li><a href="#" onclick="goToMasjid('buku-kas-santunan');return false;">📘 Buku Kas Santunan</a></li>
+        <li><a href="#" onclick="goToMasjid('anggaran');return false;">📋 Anggaran & Proposal</a></li>
+        <li><a href="#" onclick="goToMasjid('kontak');return false;">📞 Kontak Kami</a></li>
+      </ul>
     </div>
-</footer>  
 
+    <!-- Layanan Umat -->
+    <div class="footer-section">
+      <h4>Layanan Umat</h4>
+      <ul>
+        <li><a href="#" onclick="goToMasjid('majlis-talim');return false;"> Majlis Ta'lim & Dzikir</a></li>
+        <li><a href="#" onclick="goToMasjid('petugas-jumat');return false;">🕌 Sholat Jumat & Rawatib</a></li>
+        <li><a href="#" onclick="goToMasjid('bmt');return false;"> Baitul Mal (BMT) & Zakat</a></li>
+        <li><a href="#" onclick="goToMasjid('bidang-pendidikan');return false;">🎓 Pendidikan Anak (TPA/PAUD)</a></li>
+        <li><a href="#" onclick="goToMasjid('buku-kas-santunan');return false;">🤝 Santunan Yatim & Dhuafa</a></li>
+      </ul>
+    </div>
+
+    <!-- Donasi Digital -->
+    <div class="footer-section">
+      <h4>Donasi Digital</h4>
+      <ul>
+        <li><a href="#" onclick="goToMasjid('donasi');return false;">💝 Donasi Digital</a></li>
+      </ul>
+      <div class="footer-rekening">
+        <p><strong>Bank Syariah Indonesia (BSI)</strong></p>
+        <p>No. Rek: 700-123-4567</p>
+        <p>a.n. DKM Masjid Jami' Al-Ikhlas</p>
+        <p style="margin-top:10px;font-size:12px;color:#00ff88;">✓ Syariah · Transparan · Akuntabel</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>© 2026 Masjid Jami' Al-Ikhlas Kebagusan, Pasar Minggu, Jakarta Selatan. All Rights Reserved. | Dibangun dengan ❤️ untuk umat.</p>
+    <p class="footer-contact">📍 Jl. Ikhlas IV No. 22, Kebagusan, Pasar Minggu, Jakarta Selatan 12520 | 📞 (021) 7884-0000 | ✉️ info@masjidalikhlaskebagusan.or.id</p>
+    <div class="footer-social">
+      <a href="javascript:void(0)" onclick="shareWhatsApp()">💬 WhatsApp</a>
+      <a href="javascript:void(0)" onclick="shareFacebook()">📘 Facebook</a>
+      <a href="javascript:void(0)" onclick="shareInstagram()">📸 Instagram</a>
+      <a href="javascript:void(0)" onclick="shareEmail()">✉️ Email</a>
+      <a href="javascript:void(0)" onclick="copyLink()">🔗 Salin Link</a>
+    </div>
+  </div>
+</footer>
 <script>
 const surahData = [
 {number: 1, name: "Al-Fatihah", arabic: "الفاتحة", meaning: "Pembukaan", verses: 7, type: "Makkiyah"},
@@ -951,12 +953,12 @@ if (e.target === document.getElementById('verseModal')) closeModal();
 // ========== FUNGSI TOMBOL SOSIAL MEDIA FOOTER ==========
 function shareWhatsApp() {
     const text = encodeURIComponent('Al-Qur\'an & Terjemahan - Mozaik Islam\nhttps://masjidalikhlaskebagusan99-dotcom.github.io/quran/quran.html');
-    window.open('https://wa.me/?text=' + text, '_blank');
+    window.open(`https://wa.me/?text=${text}`, '_blank');
 }
 
 function shareFacebook() {
     const url = encodeURIComponent(window.location.href);
-    window.open('https://www.facebook.com/sharer/sharer.php?u=' + url, '_blank');
+    window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
 }
 
 function shareInstagram() {
@@ -966,14 +968,15 @@ function shareInstagram() {
 function shareEmail() {
     const subject = encodeURIComponent('Al-Qur\'an & Terjemahan - Mozaik Islam');
     const body = encodeURIComponent('Assalamu\'alaikum,\n\nSaya ingin membagikan halaman Al-Qur\'an & Terjemahan dari Masjid Jami\' Al-Ikhlas.\n\nLink: ' + window.location.href + '\n\nWassalamu\'alaikum.');
-    window.location.href = 'mailto:?subject=' + subject + '&body=' + body;
+    window.location.href = `mailto:?subject=${subject}&body=${body}`;
 }
 
 function copyLink() {
     const url = window.location.href;
-    navigator.clipboard.writeText(url).then(function() {
+    navigator.clipboard.writeText(url).then(() => {
         alert('✅ Link berhasil disalin ke clipboard!');
-    }).catch(function(err) {
+    }).catch(err => {
+        // Fallback untuk browser lama
         const textArea = document.createElement('textarea');
         textArea.value = url;
         document.body.appendChild(textArea);
@@ -984,6 +987,231 @@ function copyLink() {
     });
 }
 window.addEventListener('DOMContentLoaded', () => renderSurahGrid());
+</script>
+<script>
+/* ============================================================
+✅ FUNGSI NAVIGASI KE HALAMAN MASJID
+Membuka ok masjid.html dengan hash section yang dituju
+============================================================ */
+function goToMasjid(sectionId) {
+  // URL halaman Masjid (sesuaikan dengan lokasi file Anda)
+  var baseUrl = 'ok masjid.html';
+  
+  // Buka di tab yang sama dengan hash
+  window.location.href = baseUrl + '#section=' + sectionId;
+}
+
+/* ============================================================
+✅ FUNGSI SHARE SOSIAL MEDIA
+============================================================ */
+function shareWhatsApp() {
+  var text = encodeURIComponent('Masjid Jami\' Al-Ikhlas Kebagusan\nhttps://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/');
+  window.open('https://wa.me/?text=' + text, '_blank');
+}
+
+function shareFacebook() {
+  var url = encodeURIComponent('https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/');
+  window.open('https://www.facebook.com/sharer/sharer.php?u=' + url, '_blank', 'width=600,height=500');
+}
+
+function shareInstagram() {
+  copyLink();
+  setTimeout(function() {
+    alert('📸 Link tersalin! Buka Instagram → Buat Story → Tempel link');
+  }, 300);
+}
+
+function shareEmail() {
+  var subject = encodeURIComponent('Masjid Jami\' Al-Ikhlas Kebagusan');
+  var body = encodeURIComponent('Assalamu\'alaikum,\n\nMari kunjungi website resmi Masjid Jami\' Al-Ikhlas Kebagusan:\nhttps://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/\n\nWassalamu\'alaikum.');
+  window.location.href = 'mailto:?subject=' + subject + '&body=' + body;
+}
+
+function copyLink() {
+  var url = 'https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/';
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(url).then(function() {
+      alert('✅ Link berhasil disalin ke clipboard!');
+    }).catch(function() {
+      fallbackCopy(url);
+    });
+  } else {
+    fallbackCopy(url);
+  }
+}
+
+function fallbackCopy(text) {
+  var textarea = document.createElement('textarea');
+  textarea.value = text;
+  textarea.style.position = 'fixed';
+  textarea.style.opacity = '0';
+  document.body.appendChild(textarea);
+  textarea.select();
+  try {
+    document.execCommand('copy');
+    alert('✅ Link berhasil disalin ke clipboard!');
+  } catch (e) {
+    alert('❌ Gagal menyalin link');
+  }
+  document.body.removeChild(textarea);
+}
+</script>
+<script>
+// ============================================
+// ✅ PATCH: HILANGKAN FLASH & DOUBLE-SCROLL
+// Mencegah scroll ke atas saat navigasi
+// Langsung tampilkan section tujuan
+// ============================================
+(function(){
+'use strict';
+console.log(' PATCH NO-FLASH NAVIGATION: dimuat...');
+
+/* ============================================================
+✅ 1. OVERRIDE goToMasjid() - LANGSUNG KE SECTION TANPA FLASH
+============================================================ */
+var _origGoToMasjid = window.goToMasjid;
+window.goToMasjid = function(sectionId){
+    console.log('🎯 Navigasi ke section:', sectionId);
+    
+    // Cek apakah kita sudah di halaman Masjid
+    var isOnMasjidPage = (window.location.href.indexOf('ok masjid') !== -1 || 
+                          window.location.href.indexOf('Masjid-Al-Ikhlas') !== -1);
+    
+    if(isOnMasjidPage){
+        // Jika sudah di halaman Masjid, langsung scroll ke section
+        var target = document.getElementById(sectionId);
+        if(target){
+            var navHeight = 120;
+            var targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+            var offsetPosition = targetPosition - navHeight;
+            window.scrollTo({top: offsetPosition, behavior: 'instant'});
+            console.log('✅ Langsung scroll ke section (tanpa flash)');
+        }
+    } else {
+        // Jika di halaman lain, buka halaman Masjid dengan hash
+        var baseUrl = 'ok masjid.html';
+        // Gunakan replaceState untuk mencegah history stack menumpuk
+        try{
+            window.location.replace(baseUrl + '#section=' + sectionId);
+        }catch(e){
+            window.location.href = baseUrl + '#section=' + sectionId;
+        }
+    }
+};
+
+/* ============================================================
+✅ 2. CEK HASH SAAT HALAMAN DIMUAT - LANGSUNG KE SECTION
+============================================================ */
+function handleHashOnLoad(){
+    var hash = window.location.hash;
+    if(!hash || hash.length < 2) return;
+    
+    var sectionId = '';
+    if(hash.indexOf('#section=') === 0){
+        sectionId = hash.substring(9);
+    } else if(hash.indexOf('#') === 0){
+        sectionId = hash.substring(1);
+    }
+    
+    if(!sectionId) return;
+    
+    // Daftar section valid di halaman Masjid
+    var validSections = [
+        'beranda','profil','donasi','majlis-talim','majlis-dzikir',
+        'petugas-jumat','petugas-rawatib','badan-pengembangan',
+        'bidang-ibadah','bidang-pendidikan','bmt','phbi',
+        'kesejahteraan','buku-kas','buku-kas-phbi','buku-kas-santunan',
+        'anggaran','kontak','share'
+    ];
+    
+    if(validSections.indexOf(sectionId) === -1) return;
+    
+    console.log('🎯 Hash detected:', sectionId);
+    
+    // Tunggu halaman Masjid aktif
+    var checkInterval = setInterval(function(){
+        var masjidPage = document.getElementById('page-tentang-donasi');
+        if(masjidPage && masjidPage.classList.contains('active')){
+            clearInterval(checkInterval);
+            
+            // Langsung scroll ke section TANPA scroll ke atas dulu
+            var target = document.getElementById(sectionId);
+            if(target){
+                // Paksa tampilkan section jika tersembunyi
+                if(target.classList.contains('section-hidden')){
+                    target.classList.remove('section-hidden');
+                    target.classList.add('section-visible');
+                }
+                
+                // Scroll langsung (instant, bukan smooth)
+                var navHeight = 120;
+                var targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+                var offsetPosition = targetPosition - navHeight;
+                
+                // Gunakan instant scroll untuk mencegah flash
+                window.scrollTo({top: offsetPosition, behavior: 'instant'});
+                
+                // Highlight section
+                target.style.transition = 'background-color 0.5s ease';
+                target.style.backgroundColor = 'rgba(201, 162, 39, 0.15)';
+                setTimeout(function(){
+                    target.style.backgroundColor = '';
+                }, 2000);
+                
+                console.log('✅ Langsung ke section:', sectionId);
+            }
+        }
+    }, 100);
+    
+    // Timeout 5 detik untuk mencegah infinite loop
+    setTimeout(function(){ clearInterval(checkInterval); }, 5000);
+}
+
+/* ============================================================
+✅ 3. CSS: CEGAH FLASH SAAT LOAD
+============================================================ */
+var noFlashStyle = document.createElement('style');
+noFlashStyle.textContent = `
+    /* Cegah flash putih saat navigasi */
+    html {
+        scroll-behavior: auto !important;
+    }
+    
+    /* Section yang ditargetkan langsung visible */
+    .m-section.section-hidden {
+        display: none !important;
+    }
+    .m-section.section-visible {
+        display: block !important;
+    }
+    
+    /* Cegah scroll jump */
+    body {
+        overflow-x: hidden;
+    }
+`;
+document.head.appendChild(noFlashStyle);
+
+/* ============================================================
+✅ 4. INIT
+============================================================ */
+function init(){
+    // Handle hash saat halaman dimuat
+    if(document.readyState === 'loading'){
+        document.addEventListener('DOMContentLoaded', handleHashOnLoad);
+    } else {
+        handleHashOnLoad();
+    }
+    
+    // Retry untuk memastikan
+    setTimeout(handleHashOnLoad, 500);
+    setTimeout(handleHashOnLoad, 1500);
+    
+    console.log('✅ PATCH NO-FLASH: aktif');
+}
+
+init();
+})();
 </script>
 </body>
 </html>
