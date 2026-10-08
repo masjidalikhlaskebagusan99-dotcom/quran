@@ -42,6 +42,130 @@
         }
         .btn-play-all:hover { transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0,0,0,0.3); }
         .btn-play-all.playing { background: linear-gradient(135deg, #dc3545, #ff6b6b); }
+        /* ========== TOMBOL MENU NEON HIJAU ========== */
+.menu-neon-wrapper {
+    background: linear-gradient(135deg, #051207 0%, #0a1f0a 50%, #0d2818 100%);
+    border: 2px solid #00ff88;
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 25px;
+    box-shadow:
+        0 0 25px rgba(0, 255, 136, 0.5),
+        0 0 50px rgba(0, 255, 136, 0.2),
+        inset 0 0 30px rgba(0, 0, 0, 0.6);
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-neon-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #00ff88, #FFD700, #00ff88, transparent);
+    animation: neonShine 3s linear infinite;
+}
+
+@keyframes neonShine {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.menu-neon-title {
+    text-align: center;
+    color: #FFD700 !important;
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow:
+        0 0 8px rgba(255, 215, 0, 0.7),
+        0 0 16px rgba(255, 215, 0, 0.4);
+}
+
+.menu-neon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.btn-neon {
+    display: inline-block;
+    padding: 11px 20px;
+    background: linear-gradient(135deg, rgba(5, 30, 18, 0.95), rgba(0, 15, 8, 0.98));
+    color: #FFD700 !important;
+    border: 2px solid #00ff88;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+    box-shadow:
+        0 0 10px rgba(0, 255, 136, 0.4),
+        inset 0 0 10px rgba(0, 255, 136, 0.1);
+    text-shadow: 0 0 6px rgba(255, 215, 0, 0.6);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.btn-neon:hover {
+    background: linear-gradient(135deg, rgba(0, 255, 136, 0.25), rgba(0, 20, 10, 0.9));
+    box-shadow:
+        0 0 20px rgba(0, 255, 136, 0.8),
+        0 0 40px rgba(0, 255, 136, 0.4),
+        inset 0 0 15px rgba(0, 255, 136, 0.2);
+    transform: translateY(-3px) scale(1.03);
+    border-color: #FFD700;
+    text-shadow:
+        0 0 10px rgba(255, 215, 0, 1),
+        0 0 20px rgba(255, 215, 0, 0.8);
+}
+
+.btn-neon:active {
+    transform: translateY(0) scale(0.98);
+    box-shadow:
+        0 0 12px rgba(0, 255, 136, 0.5),
+        inset 0 0 12px rgba(0, 255, 136, 0.3);
+}
+
+/* Tombol lebar penuh (Kumpulan Karomah Waliyullah) */
+.btn-neon.full-width {
+    width: 100%;
+    max-width: 420px;
+    padding: 14px 24px;
+    font-size: 15px;
+    background: linear-gradient(135deg, rgba(0, 40, 20, 0.95), rgba(0, 20, 10, 0.98));
+    border-width: 2.5px;
+    box-shadow:
+        0 0 15px rgba(0, 255, 136, 0.6),
+        inset 0 0 15px rgba(0, 255, 136, 0.15);
+}
+
+.btn-neon.full-width:hover {
+    box-shadow:
+        0 0 25px rgba(0, 255, 136, 0.9),
+        0 0 50px rgba(0, 255, 136, 0.5),
+        inset 0 0 20px rgba(0, 255, 136, 0.25);
+}
+
+/* Responsive tombol neon */
+@media (max-width: 768px) {
+    .menu-neon-wrapper { padding: 16px; }
+    .menu-neon-title { font-size: 15px; }
+    .btn-neon { padding: 9px 14px; font-size: 11px; }
+    .btn-neon.full-width { padding: 11px 18px; font-size: 13px; }
+    .menu-neon-grid { gap: 8px; }
+}
+
+@media (max-width: 480px) {
+    .btn-neon { padding: 7px 10px; font-size: 10px; }
+    .btn-neon.full-width { font-size: 11px; }
+}
         .surah-grid {
             display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
             gap: 12px; margin-bottom: 30px;
@@ -233,7 +357,26 @@
                 <button class="btn-play-all" id="btnPlayAll">▶️ Putar Semua Surah</button>
             </div>
         </div>
-
+    <!-- Tombol Menu Neon Hijau -->
+    <div class="menu-neon-wrapper">
+        <div class="menu-neon-title">Kategori Utama</div>
+        <div class="menu-neon-grid">
+            <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/quran/quran.html" class="btn-neon">Al-Quran</a>
+            <a href="tag-syekh.html" class="btn-neon">Syekh Abdul Qadir</a>
+            <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/artikelwali2/artikelwali2.html" class="btn-neon full-width">Kumpulan Karomah Waliyullah</a>
+            <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/artikel/artikel.html" class="btn-neon">Futuh Alghaib</a>
+            <a href="tag-nasihat.html" class="btn-neon">Nasihat</a>
+            <a href="tag-iman.html" class="btn-neon">Iman</a>
+            <a href="tag-taqwa.html" class="btn-neon">Taqwa</a>
+            <a href="tag-ibadah.html" class="btn-neon">Ibadah</a>
+            <a href="tag-dzikir.html" class="btn-neon">Dzikir</a>
+            <a href="tag-sholat.html" class="btn-neon">Sholat</a>
+            <a href="tag-puasa.html" class="btn-neon">Puasa</a>
+            <a href="tag-haji.html" class="btn-neon">Haji</a>
+            <a href="tag-zakat.html" class="btn-neon">Zakat</a>
+            <a href="tag-sedekah.html" class="btn-neon">Sedekah</a>
+        </div>
+    </div>
         <div class="surah-grid" id="surahGrid"></div>
     </div>
 
